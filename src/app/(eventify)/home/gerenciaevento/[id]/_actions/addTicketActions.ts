@@ -35,7 +35,7 @@ export default async function addTicketAction(formData: ParticipantsSchema) {
                 manualCode: manualCode// Replace with actual QR code data
             },
         });
-        console.log("criou aqui kkkkk",createTicket);
+   
          await resend.emails.send({
       from: "Seu App <onboarding@resend.dev>", // usar domínio verificado
       to: [formData.participantEmail],
