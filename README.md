@@ -1,4 +1,3 @@
-markdown
 # 📦 EventifyCode
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-purple)
@@ -6,32 +5,30 @@ markdown
 ![Prisma](https://img.shields.io/badge/backend-Prisma%20ORM-green)
 ![Frontend](https://img.shields.io/badge/frontend-React.js-orange)
 
-**Autor:** Diego S.  
-**Repositório:** [EventifyCode.com](https://eventify-code-oru2.vercel.app/login)
+**Autor:** Diego Santos  
+**Repositório:** [github.com/Odiegodev1/EventifyCode](https://github.com/Odiegodev1/EventifyCode)
 
 ---
 
 ## 🧾 Descrição do Projeto
 
-**EventifyCode** é uma aplicação web desenvolvida com o objetivo de facilitar o gerenciamento de eventos por meio da geração de códigos QR e controle de participantes. A plataforma oferece uma experiência digital moderna e eficiente, voltada para organizadores que desejam automatizar processos de inscrição, check-in e acompanhamento de presença.
+**EventifyCode** é uma aplicação web desenvolvida para facilitar o gerenciamento de eventos por meio da geração de códigos de 6 dígitos para participantes e controle de presença. A plataforma proporciona uma experiência digital moderna e eficiente, voltada para organizadores que desejam automatizar processos de inscrição, check-in e acompanhamento de presença.  
 
-**Público-alvo:**  
-Organizadores de eventos acadêmicos, corporativos, sociais e comunitários.
+**Público-alvo:** Organizadores de eventos acadêmicos, corporativos, sociais e comunitários.  
 
-**Objetivo:**  
-Simplificar a criação, divulgação e gestão de eventos, promovendo agilidade, segurança e controle em tempo real.
+**Objetivo:** Simplificar a criação, divulgação e gestão de eventos, promovendo agilidade, segurança e controle em tempo real.  
 
 ---
 
 ## ⚙️ Funcionalidades Principais
 
-- ✅ Cadastro e autenticação de usuários (via GitHub ou email/senha)
-- ✅ Criação de eventos com data, hora, descrição e link personalizado
-- ✅ Geração de QR Code para check-in de participantes
-- ✅ Controle de presença com status de check-in e pendência
-- ✅ Adição manual de participantes com código individual
-- ✅ Visualização de eventos e estatísticas
-- ✅ Interface responsiva e intuitiva
+- ✅ Cadastro e autenticação de usuários (via GitHub ou email/senha)  
+- ✅ Criação de eventos com data, hora, descrição e link personalizado  
+- ✅ Geração de códigos de 6 dígitos para cada participante  
+- ✅ Controle de presença com status de check-in e pendência  
+- ✅ Adição manual de participantes com código individual  
+- ✅ Visualização de eventos e estatísticas em tempo real  
+- ✅ Interface responsiva e intuitiva  
 
 ---
 
@@ -43,33 +40,32 @@ Simplificar a criação, divulgação e gestão de eventos, promovendo agilidade
 | **Backend**    | Node.js, Express.js, Prisma ORM      |
 | **Banco de Dados** | PostgreSQL via Prisma             |
 | **Autenticação** | OAuth (GitHub), JWT                |
-| **Outros**     | QR Code Generator API, Vite          |
+| **Outros**     | Vite, ESLint                          |
 
 ---
 
 ## 🗂️ Estrutura do Projeto
 
-```bash
+
 eventifycode/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   ├── assets/
-│   └── App.js
-├── prisma/
+├── public/                   # Arquivos estáticos (imagens, fontes, etc.)
+├── src/                      # Código-fonte da aplicação
+│   ├── components/           # Componentes React
+│   ├── pages/                # Páginas da aplicação
+│   ├── services/             # Serviços e APIs
+│   ├── assets/               # Recursos (imagens, ícones, etc.)
+│   └── App.js                # Arquivo principal do frontend
+├── prisma/                   # Configuração e migrations do Prisma
 │   ├── schema.prisma
 │   └── migrations/
-├── server/
+├── server/                   # Backend
 │   ├── controllers/
 │   ├── models/
 │   ├── routes/
 │   └── index.js
-├── .env
-├── package.json
-└── README.md
+├── .env                      # Variáveis de ambiente
+├── package.json               # Dependências e scripts
+└── README.md                  # Documentação do projeto
 📥 Instruções de Instalação e Execução
 Pré-requisitos
 Node.js ≥ 18
@@ -82,11 +78,12 @@ Prisma CLI (npm install prisma -g)
 
 Instalação
 bash
+Copiar código
 # Clonar o repositório
-git clone https://github.com/seu-usuario/eventifycode.git
+git clone https://github.com/Odiegodev1/EventifyCode.git
 
 # Acessar a pasta do projeto
-cd eventifycode
+cd EventifyCode
 
 # Instalar dependências
 npm install
@@ -96,6 +93,7 @@ npx prisma generate
 npx prisma migrate dev
 Execução
 bash
+Copiar código
 # Iniciar o servidor backend
 npm run server
 
@@ -106,7 +104,7 @@ Após o login, o usuário pode:
 
 Criar um novo evento preenchendo os campos obrigatórios.
 
-Gerar um link ou QR Code para o evento.
+Gerar códigos de 6 dígitos para cada participante.
 
 Adicionar participantes manualmente ou permitir autoinscrição.
 
@@ -115,22 +113,20 @@ Monitorar check-ins em tempo real.
 Visualizar detalhes e estatísticas de cada evento.
 
 🖼️ Imagens Ilustrativas
-🔐 Tela de Cadastro
+Adicione suas imagens aqui com Markdown, por exemplo:
 
-🗓️ Tela Principal de Eventos
 
-📝 Modal de Criação de Evento
-
-👥 Gerenciamento de Participantes
-
-🔢 Código Manual e Status de Participantes
-
-🔑 Tela de Login com GitHub
-
+![Tela de Cadastro](./images/cadastro.png)
+![Tela Principal de Eventos](./images/eventos.png)
+![Modal de Criação de Evento](./images/modal_evento.png)
+![Gerenciamento de Participantes](./images/participantes.png)
+![Código Manual e Status](./images/codigo_manual.png)
+![Tela de Login](./images/login.png)
 🤝 Contribuição
-Contribuições são encorajadas! Para colaborar:
+Contribuições são bem-vindas! Para colaborar:
 
 bash
+Copiar código
 # Fork o repositório
 # Crie uma branch: git checkout -b feature/nova-feature
 # Commit suas alterações: git commit -m 'Adiciona nova funcionalidade'
