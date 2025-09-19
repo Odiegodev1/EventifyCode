@@ -7,7 +7,7 @@ markdown
 ![Frontend](https://img.shields.io/badge/frontend-React.js-orange)
 
 **Autor:** Diego S.  
-**Repositório:** [github.com/seu-usuario/eventifycode](https://github.com/seu-usuario/eventifycode)
+**Repositório:** [EventifyCode.com](https://eventify-code-oru2.vercel.app/login)
 
 ---
 
