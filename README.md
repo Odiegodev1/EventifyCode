@@ -1,3 +1,4 @@
+markdown
 # 📦 EventifyCode
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-purple)
@@ -69,3 +70,71 @@ eventifycode/
 ├── .env
 ├── package.json
 └── README.md
+📥 Instruções de Instalação e Execução
+Pré-requisitos
+Node.js ≥ 18
+
+PostgreSQL instalado
+
+Conta no GitHub para autenticação
+
+Prisma CLI (npm install prisma -g)
+
+Instalação
+bash
+# Clonar o repositório
+git clone https://github.com/seu-usuario/eventifycode.git
+
+# Acessar a pasta do projeto
+cd eventifycode
+
+# Instalar dependências
+npm install
+
+# Gerar e aplicar o banco de dados com Prisma
+npx prisma generate
+npx prisma migrate dev
+Execução
+bash
+# Iniciar o servidor backend
+npm run server
+
+# Iniciar o frontend
+npm start
+🧑‍💻 Uso e Funcionamento
+Após o login, o usuário pode:
+
+Criar um novo evento preenchendo os campos obrigatórios.
+
+Gerar um link ou QR Code para o evento.
+
+Adicionar participantes manualmente ou permitir autoinscrição.
+
+Monitorar check-ins em tempo real.
+
+Visualizar detalhes e estatísticas de cada evento.
+
+🖼️ Imagens Ilustrativas
+🔐 Tela de Cadastro
+
+🗓️ Tela Principal de Eventos
+
+📝 Modal de Criação de Evento
+
+👥 Gerenciamento de Participantes
+
+🔢 Código Manual e Status de Participantes
+
+🔑 Tela de Login com GitHub
+
+🤝 Contribuição
+Contribuições são encorajadas! Para colaborar:
+
+bash
+# Fork o repositório
+# Crie uma branch: git checkout -b feature/nova-feature
+# Commit suas alterações: git commit -m 'Adiciona nova funcionalidade'
+# Push para a branch: git push origin feature/nova-feature
+# Abra um Pull Request
+📄 Licença
+Este projeto está licenciado sob os termos da MIT License. Consulte o arquivo LICENSE para mais informações.
